@@ -1,0 +1,9 @@
+-
+  name: To copy the index html file
+  hosts: all
+  tasks:
+    -
+      name: copy
+      copy:
+        src: /etc/ansible/index.html
+        dest: /var/www/html/

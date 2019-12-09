@@ -1,0 +1,9 @@
+-
+  name: Copying from controller to target.
+  hosts: all
+  tasks:
+    -
+      name: Copy Test
+      copy:
+        src: /tmp/test.txt
+        dest: /tmp/test.txt

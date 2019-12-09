@@ -1,0 +1,7 @@
+-
+  name: Checking connection among hosts
+  hosts: all
+  tasks:
+    -
+      name: Ping Test
+      ping:

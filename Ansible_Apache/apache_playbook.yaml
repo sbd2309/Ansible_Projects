@@ -1,0 +1,11 @@
+-
+  name: Install Apache in target servers
+  hosts: all
+  remote_user: root
+  tasks:
+    -
+      name: Install Package
+      yum: name=httpd state=present
+    -
+      name: Start what is installed
+      service: name=httpd state=started
