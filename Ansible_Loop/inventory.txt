@@ -1,0 +1,2 @@
+target1 ansible_host=192.168.43.55 ansible_user=osboxes
+target2 ansible_host=192.168.43.29 ansible_user=osboxes

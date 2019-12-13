@@ -1,0 +1,12 @@
+-
+  name: Try to run script
+  hosts: all
+  tasks:
+    -
+      name: copy
+      copy:
+        src: /home/osboxes/ansible/ansible_script/Ansible_script/test2.sh
+        dest: /home/osboxes
+    -
+      name: Run script
+      command: sh /home/osboxes/test2.sh

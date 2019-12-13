@@ -1,0 +1,13 @@
+-
+  name: Backup , New File , Restart on 63 and 64
+  hosts: all
+  vars:
+    date: "{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}"
+  tasks:
+     -
+       command: chdir=/home/osboxes cp '{{ item }}' '{{ item }}'{{ date }}
+       loop:
+        - access_ssl_log
+        - access_log
+        - error_log
+        
